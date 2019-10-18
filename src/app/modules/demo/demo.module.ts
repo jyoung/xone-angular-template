@@ -4,8 +4,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../../material.module';
 
 import { DemoRoutingModule } from './demo-routing.module';
-import { ButtonsComponent } from './buttons/buttons.component';
-import { FlexboxComponent } from './flexbox/flexbox.component';
+import { ButtonsComponent } from './views/buttons/buttons.component';
+import { FlexboxComponent } from './views/flexbox/flexbox.component';
 
 
 @NgModule({

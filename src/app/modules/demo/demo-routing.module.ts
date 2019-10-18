@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ButtonsComponent } from './buttons/buttons.component';
-import { FlexboxComponent } from './flexbox/flexbox.component';
+import { ButtonsComponent } from './views/buttons/buttons.component';
+import { FlexboxComponent } from './views/flexbox/flexbox.component';
 
 
 const routes: Routes = [
