@@ -1,0 +1,27 @@
+.flex-container {
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+}
+
+// change when max width is less then 800
+@media all and (max-width: 800px) {
+    .flex-container {
+        justify-content: flex-start;
+    }   
+}
+
+.flex-item {
+    margin-top: 5px;
+    width: 200px;
+    height: 150px;
+    background: teal;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    line-height: 150px;
+}
