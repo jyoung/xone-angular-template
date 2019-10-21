@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MaterialModule } from '../../material.module';
+import { MaterialModule } from '../material.module';
 
 import { DemoRoutingModule } from './demo-routing.module';
 import { ButtonsComponent } from './views/buttons/buttons.component';
