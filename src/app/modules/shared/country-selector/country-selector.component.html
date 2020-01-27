@@ -1,0 +1,10 @@
+<mat-form-field>
+    <mat-label>Country</mat-label>
+    <mat-select [formControl]="countryControl" required>
+        <mat-option *ngFor="let country of countries" [value]="country">
+            {{country.abbr}}
+        </mat-option>
+    </mat-select>
+    <mat-error *ngIf="countryControl.hasError('required')">Please Select A Country</mat-error>
+    <mat-hint>{{countryControl.value?.name}}</mat-hint>
+</mat-form-field>
