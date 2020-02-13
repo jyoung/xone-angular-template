@@ -8,7 +8,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { UserComponent } from './components/user/user.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { HomeComponent } from './views/home/home.component';
 
@@ -16,9 +16,9 @@ import { HomeComponent } from './views/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent,
+    UserComponent,
     SidenavComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

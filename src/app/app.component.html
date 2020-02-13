@@ -1,10 +1,12 @@
 <mat-toolbar color="primary" class="app-toolbar mat-elevation-z5">
-    <button mat-button (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <h1>X1 - {{title}}</h1>
-    <span class="flex-space"></span>
-    <app-toolbar></app-toolbar>
+    <mat-toolbar-row>
+        <button mat-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <h1>X1 - {{title}}</h1>
+        <span class="flex-space"></span>
+        <app-user></app-user>
+    </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container class="app-sidenav-container">
     <mat-sidenav #sidenav class="app-sidenav mat-elevation-z10" [opened]="!isScreenSmall()"
