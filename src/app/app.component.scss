@@ -1,3 +1,28 @@
+.navbar-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*padding: 8px 16px;*/
+  
+    > .mat-button {
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+}
+.navbar {
+    display: block;
+}
+
+.navbar-show-small {
+    display: none;
+}
+
+.navbar-link {
+    text-decoration: inherit;
+    flex: 1;
+}
+
 .app-sidenav-container {
     flex: 1;
     position: fixed;
@@ -18,3 +43,21 @@
 .app-sidenav {
     width: 240px;
 }
+
+/**
+  * Rules for when the device is detected to be a small screen.
+  * Moves content two rows instead of one.
+  */
+  @media (max-width: 720px) {
+    .navbar-hide-small {
+      display: none;
+    }
+  
+    .navbar-show-small {
+      display: block;
+    }
+  
+    .navbar {
+      display: flex;
+    }
+  }
