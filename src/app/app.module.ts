@@ -12,6 +12,8 @@ import { UserComponent } from './components/user/user.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { HomeComponent } from './views/home/home.component';
 
+import { CoreModule } from './modules/core/core.module';
+import { SharedModule } from './modules/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { HomeComponent } from './views/home/home.component';
     ReactiveFormsModule,
     MaterialModule,
     FlexLayoutModule,
-    AppRoutingModule
+    AppRoutingModule,   // Application Routes
+    CoreModule,         // Singleton Objects
+    SharedModule,       // Shared Components, Pipes etc
   ],
   providers: [],
   bootstrap: [AppComponent],

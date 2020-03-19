@@ -18,4 +18,27 @@
   .mat-list-item-content {
     color: #FFFFFF;
   }
+
+  .mat-expansion-panel {
+    background-color: #53565A;
+  }
+
+  // .mat-expansion-panel-header-title {
+  //   color: #FFFFFF;
+  // }
+
+  .mat-expansion-panel-header {
+    .mat-content {
+      color: #FFFFFF;
+    }
+  }
+  // .sidenav-expansion-panel {
+  //   .mat-content {
+  //     color:  #FFFFFF !important;
+  //   }
+  // }
+
+  .mat-expansion-panel-header > .mat-expansion-indicator, .mat-expansion-indicator:after {
+    color:  #FFFFFF !important;
+  }
 }
