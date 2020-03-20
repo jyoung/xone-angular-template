@@ -4,7 +4,7 @@ import { HomeComponent } from './views/home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'demo', loadChildren: './modules/demo/demo.module#DemoModule' }, // lazy loaded. Load other modules like this
+  { path: 'demo', loadChildren: () => import('./modules/demo/demo.module').then(m => m.DemoModule) }, // lazy loaded. Load other modules like this
 ];
 
 @NgModule({
