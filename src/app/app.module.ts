@@ -14,6 +14,7 @@ import { HomeComponent } from './views/home/home.component';
 
 import { CoreModule } from './modules/core/core.module';
 import { SharedModule } from './modules/shared/shared.module';
+import { AppNavComponent } from './components/app-nav/app-nav.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SharedModule } from './modules/shared/shared.module';
     UserComponent,
     SidenavComponent,
     HomeComponent,
+    AppNavComponent,
   ],
   imports: [
     BrowserModule,
